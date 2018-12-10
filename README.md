@@ -1,7 +1,7 @@
-# SSH to a Debian vm
-Create a vm (debian) with Debian Stretch 9. Oracle Virtual Box can be a good choice.
+# SSH to a Debian VM
+Create a VM (debian) with Debian Stretch 9. Oracle Virtual Box can be a good choice. Ubuntu is my host OS.
 
-## Connect the Debian VM  guest os from host (Ubuntu)
+## Connect the guest os (Debian VM) from host (Ubuntu)
 
 ### Step 1: Install Debian in Oracle Virtual Box
 
@@ -11,15 +11,17 @@ $ ip address
 
 ```
 
-### Step 2: From debian terminal remove cd-rom source location from sources.list
+### Step 2: From Debian terminal remove cd-rom source location from sources.list
 
 ```
+$ su -
 $ nano /etc/apt/sources.list
 $ apt-get update
 $ apt-get install openssh-server
 
 
 ```
+Turn off the VM
 
 
 ### Step 3: Enable port forwarding
@@ -36,7 +38,10 @@ Guest IP:
 Guest Port: 22
 ```
 
-Now from host (Ubuntu) terminal. "shahjalal" is the user
+
+### Step 4: ssh to the VM
+Start the Debian VM.
+Now from host (Ubuntu) terminal. "shahjalal" is the user.
 ```
 $ ssh shahjalal@127.0.0.1 -p 3022
 shahjalal@127.0.0.1's password:
