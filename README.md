@@ -27,12 +27,14 @@ Select the VM in the Virtual Box > Settings > Network > Advanced > Port Forwardi
 
 <img src="images/port-forwarding.png" width="600px" />
 
+```
 Name: ssh
 Protocol: TCP
 Host IP:
 Host Port: 3022
 Guest IP:
 Guest Port: 22
+```
 
 Now from host (Ubuntu) terminal. "shahjalal" is the user
 ```
