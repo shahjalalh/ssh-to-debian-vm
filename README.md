@@ -1,9 +1,9 @@
 # SSH to a Debian VM
 Create a VM (debian) with Debian Stretch 9. Oracle Virtual Box can be a good choice. Ubuntu is my host OS.
 
-## Connect the guest os (Debian VM) from host (Ubuntu)
+## Connect the guest os (Debian 9 VM) from host (Ubuntu)
 
-### Step 1: Install Debian in Oracle Virtual Box
+### Step 1: Install Debian 9 in Oracle Virtual Box
 
 To get the IP address of the guest os. (in my case: 10.0.2.15/24) (optional)
 ```
