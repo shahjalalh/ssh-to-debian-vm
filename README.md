@@ -16,6 +16,17 @@ $ ip address
 ```
 $ su -
 $ nano /etc/apt/sources.list
+
+deb http://deb.debian.org/debian stretch main
+deb-src http://deb.debian.org/debian stretch main
+
+deb http://deb.debian.org/debian-security/ stretch/updates main
+deb-src http://deb.debian.org/debian-security/ stretch/updates main
+
+deb http://deb.debian.org/debian stretch-updates main
+deb-src http://deb.debian.org/debian stretch-updates main
+
+
 $ apt-get update
 $ apt-get install openssh-server
 
